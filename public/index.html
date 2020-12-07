@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-app.js"></script>
+
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-analytics.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-auth.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyBHfrzfY7CuyNWBcfU6nZirL4MaBKBGnbI",
+    authDomain: "samples-by-wes.firebaseapp.com",
+    projectId: "samples-by-wes",
+    storageBucket: "samples-by-wes.appspot.com",
+    messagingSenderId: "797682855931",
+    appId: "1:797682855931:web:ca990df11c032d11ade55e",
+    measurementId: "G-XGT9DQHE29"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+
+<script type="module" src='app.js'></script>
+
+</head>
+<body>
+    <h1>SAMPLES BY WES</h1>
+
+    <section id='whenSignedOut'>
+        <header> Signed Out </header>
+        <button id='signInBtn'> Sign In with Google</button>
+    </section>
+
+    <section id='whenSignedIn' hidden='true'>
+        <header>Signed In</header>
+        <button id='signOutBtn'>Sign Out</button>
+    </section>
+
+
+</body>
+</html>
